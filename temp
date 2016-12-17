@@ -1,0 +1,5 @@
+[(:or :p :pick) _] (pickup player)
+
+[:check that] (if (and (= (player :location) :dark) (= that :figure))
+                    (assoc-in cur-map [:dark :desc] "The grue is right in front of you!")
+                    )
