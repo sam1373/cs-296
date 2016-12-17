@@ -541,7 +541,7 @@
           new-map (do (println "-----" )(modmap pl local-map command))
           new-pl (modpl pl local-map command)
           ]
-      (if (= (new-pl :hp) 0)
+      (if (<= (new-pl :hp) 0)
 
       (println "You have died. Game Over.")
       (if (= (new-pl :location) :park)
